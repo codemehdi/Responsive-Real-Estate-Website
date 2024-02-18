@@ -1,0 +1,272 @@
+/* ============================================= Home ============================================= */
+
+@media screen and (max-width: 1080px) {
+    ::-webkit-scrollbar {
+        width: 0; 
+        height: 0;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    *{
+        overflow-x: hidden;
+        scrollbar-width: 0;
+    }
+
+    header nav .title{
+        font-size: 20px;
+    }
+    header nav .options{
+        width: 50%;
+    }
+    header nav .options .option{
+        font-size: 16px;
+    }
+
+    .sign-up-form{
+        height: 70svh;
+    }
+    #login{
+        left:15%;
+    }
+    #register{
+        left:110%;
+    }
+
+    .mid{
+        width: 100%;
+        padding-right: 2%;
+    }
+
+    .mid .home-page{
+        display: grid;
+        grid-template-columns:100%;
+    }
+    .mid .home-page .left{
+        width:100%;
+    }
+    .mid .home-page .Big-text{
+        font-size: 27px;
+    }
+    .mid .home-page .right{
+        display: none;
+    }
+
+
+    .line-circle{
+        width:100%;
+        
+    }
+
+
+    .info-container .check-out{
+        margin-top: 3%;
+        grid-template-columns: 1fr 1fr;
+        height: 1fr;
+        margin-bottom: 0;
+    }
+
+    .info-container .check-out span{
+        font-size: 20px;
+        overflow: visible;
+        width: 100%;
+    }
+    .info-container .check-out .buttons{
+        width: 50%;
+        height: 100%;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    .info-container .check-out button{
+        width:80px;
+        height:40%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+
+    .show-more{
+        display: none;
+    }
+
+
+    #item3{
+        display: none;
+    }
+
+    #item4{
+        display: none;
+    }
+
+    .browsing-area{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-left: 5%;
+    }
+
+    .browsing-area .browsing-container{
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .about{
+        width:100%;
+    }
+
+    .about .text1 .text1-title{
+        font-size: 20px;
+    }
+    .text1 .text1-content{
+        font-size: 14px;
+    }
+    .about .text2 .text2-title{
+        font-size: 20px;
+    }
+    .text2 .text2-content{
+        font-size: 14px;
+    }
+    .about .text3 .text3-title{
+        font-size: 20px;
+    }
+    .text3 .text3-content{
+        font-size: 14px;
+    }
+
+
+    .text1-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text1-image img{
+        width: 100px;
+    }
+    .text2-image{
+        display: flex;
+        align-items: center;
+    }
+    .text2-image img{
+        width: 100px;
+    }
+    .text3-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text3-image img{
+        width: 100px;
+    }
+
+
+
+    .stats{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .deals-done .deals-image img{
+        width: 120px;
+    }
+    .deals-done .deals-stats{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .deals-done .deals{
+        font-size: 13px;
+    }
+
+    .houses-available .houses-image img{
+        width: 160px;
+    }
+    .houses-available .houses-stats{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .houses-available .houses{
+        font-size: 13px;
+    }
+
+    .agents-available .agents-image img{
+        padding-top: 15%;
+        width: 100px;
+    }
+    .agents-available .agents-stats{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .agents-available .agents{
+        font-size: 13px;
+    }
+
+
+
+
+    .Contact-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Contact-container .contact-title{
+        font-size: 18px;
+    }
+    .contact-fill{
+        font-size: 12px;
+    }
+    .Contact-container .contact-fill{
+        margin-left: 1%;
+    }
+
+
+
+
+
+    .footer-container{
+        grid-template-columns: 50% 50%;
+        height: 50svh;
+    }
+    .footer-container .logo img{
+        width:150px;
+    }
+    .footer-container .footer-information .disclaimer{
+        font-size: 16px;
+    }
+    .footer-container .footer-information .disclaimer-details{
+        font-size: 12px;
+    }
+
+
+
+
+
+    .Login-alert-container{
+        width: 40vh;
+    }
+    .Contact-alert{
+        width: 40vh;
+    }
+    .sign-up-form{
+        width: 50vh;
+    }
+    .buy-container{
+        width: 40vh;
+    }
+    .Contact-alert{
+        top:300vh;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    header nav .options{
+        display: none;
+    }
+}

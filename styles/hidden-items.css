@@ -1,0 +1,427 @@
+.overlay{
+    display: none;
+    height: 80vh;
+    width:70vh;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    border: 3px solid #36454F;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius:25px;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+.overlay .overlay-container{
+    position: relative;
+}
+
+.overlay .overlay-container .overlay-title{
+    margin: 5% 3% 10% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overlay .overlay-container button{
+    width:50px;
+    margin-right: 2%;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.overlay .overlay-container button:hover{
+    color:black;
+    background-color: white;
+}
+
+.overlay .overlay-container span{
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+.overlay-listings{
+    height: 100%;
+    text-align: center;
+    margin-top: 40%;
+    opacity: 0.6;
+}
+
+.backdrop{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.overlay.show{
+    opacity:1;
+    display:block;
+}
+
+.backdrop.show{
+    opacity:1;
+    display:block;
+}
+
+/* =============================================Sign Up================================================ */
+
+.sign-up-form{
+    height:50vh;
+    width:60vh;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    border: 2px solid #36454F;
+    z-index: 12;
+    overflow: hidden;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+#close_btn_form{
+    position: absolute;
+    right:5%;
+    top:2%;
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: black;
+    font-size: 26px;
+    font-weight: 700;
+    color:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#close_btn_form:hover{
+    color:black;
+    background-color: white;
+}
+
+.sign-up-form .form-buttons{
+    width:220px;
+    display: flex;
+    justify-content: center;
+    margin: 3% auto 0 auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.sign-up-form .form-buttons .Toggle-signing{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn_form{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 110px;
+    height: 100%;
+    background-color: #b89573;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.signing-inputs{
+    position: absolute;
+    top:100px;
+    width: 280px;
+    transition: all 0.3s ease;
+}
+
+.signing-inputs input{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.signing-inputs .signing-btn{
+    width: 85%;
+    padding: 10px 30px;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    background-color: #b89573;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 10%;
+    transition: all 0.3s ease;
+}
+
+.signing-inputs .signing-btn:hover{
+    background-color:#856c53;
+}
+
+#login{
+    left: 25%;
+}
+
+#register{
+    left:125%;
+}
+
+
+/* ============================================ Browse LearnMore=========================================== */
+
+.info-container{
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    height:80vh;
+    width: 60vh;
+    position: absolute;
+    z-index: 10;
+    top:100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid #36454F;
+    display: none;
+}
+
+.info-container .image-display{
+    padding: 6px;
+    height:45%;
+    width:100%;
+}
+
+.info-container .image-display img{
+    height: 100%;
+    width: 100%;
+    border-radius: 26px;
+}
+
+.info-container .details-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8%;
+}
+
+.info-container ul{
+    list-style-image: url('../images/icons/2.png');
+    font-size: 13px;
+}
+
+.info-container .details-container .details-left{
+    margin-left: 15%;
+}
+
+.info-container .details-container .details-right{
+    margin-left: 15%;
+}
+
+.info-container li{
+    margin-top: 8%;
+}
+
+.info-container .check-out{
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 4%;
+    display: grid;
+}
+
+.info-container .check-out{
+    height:60px;
+    display: flex;
+    align-items: center;
+}
+
+.info-container .check-out span{
+    color:#36454F;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 25%;
+}
+
+.info-container .check-out .buttons{
+    margin-bottom: 4%;
+}
+
+.info-container .check-out button{
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    height:70%;
+    width:180px;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.info-container .check-out .check-out-order{
+    background-color: #C3B091;
+    color:#36454F;
+    transition: all 0.3s ease;
+}
+
+.info-container .check-out .check-out-order:hover{
+    background-color: #36454F;
+    color:#C3B091;
+}
+
+.info-container .check-out .check-out-close{
+    background-color: rgb(211, 84, 84);
+    color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.info-container .check-out .check-out-close:hover{
+    background-color: rgb(150, 0, 0);
+    color: white;
+}
+
+/* ============================================ Browse Buy============================================= */
+
+.buy-container{
+    height:50vh;
+    width: 70vh;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 10;
+    border: 2px solid #36454F;
+    top: 130vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.buy-container .buy-header{
+    display: flex;
+    align-items: center;
+    height:15%;
+}
+
+.buy-container .buy-header span{
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    font-weight: 700;
+    color:red;
+}
+
+.buy-container .content{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+    opacity: 0.6;
+}
+
+/* ==========================================Sign Up Alert=========================================== */
+
+.Login-alert-container{
+    height:50vh;
+    width: 70vh;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 10;
+    border: 2px solid #36454F;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.Login-alert-container .alert-header{
+    display: flex;
+    align-items: center;
+    height:15%;
+}
+
+.Login-alert-container .alert-header span{
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    font-weight: 700;
+    color:red;
+}
+
+.Login-alert-container .alert-content{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+    opacity: 0.6;
+}
+
+/* ==========================================Contact Alert=========================================== */
+
+.Contact-alert{
+    height:50vh;
+    width: 70vh;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 10;
+    border: 2px solid #36454F;
+    top: 375vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.Contact-alert .contact-header{
+    display: flex;
+    align-items: center;
+    height:15%;
+}
+
+.Contact-alert .contact-header span{
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    font-weight: 700;
+    color:red;
+}
+
+.Contact-alert .contact-content{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+    opacity: 0.6;
+}

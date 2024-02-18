@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 2%;
+}
+
+.about img{
+    transition: all 0.3s ease;
+}
+
+.about img:hover{
+    transform: scale(1.2);
+}
+
+.text1{
+    max-width: 100%;
+}
+
+.text1 .text1-title{
+    margin-top: 2%;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.text1 .text1-content{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.text1-image{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.text2-image{
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.text2{
+    max-width: 100%;
+}
+
+.text2 .text2-title{
+    margin-top: 2%;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.text2 .text2-content{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 3%;
+}
+
+.text3-image{
+    margin-left: 40%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+}

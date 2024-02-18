@@ -1,0 +1,456 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/browse.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/stats.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/hidden-items.css">
+        <link rel="stylesheet" href="phone-styles/phone.css">
+        <link rel="stylesheet" href="phone-styles/tablet.css">
+        <link rel="stylesheet" href="phone-styles/large_pc.css">
+        <script src="https://kit.fontawesome.com/8dc3636365.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Project</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="title">
+                    <a href="index.html">Shelter <span class="tocolor">Sphere</span></a>
+                </div>
+                <div class="options">
+                    <div class="option"><a onclick="scrollToTarget_browse()">Browse</a></div>
+                    <div class="option"><a onclick="scrollToTarget_about()">About</a></div>
+                    <div class="option"><a onclick="scrollToTarget_contact()">Contact</a></div>
+                </div>
+            </nav>
+        </header>
+        <div class="mid">
+            <div class="home-page">
+                <div class="left">
+                    <div class="Big-text">Discover Your Dream Home</div>
+                    <div class="small-text">Find the perfect property that suits your lifestyle and budget. Explore our wide range of listings and let us help you make your real estate dreams a reality.</div>
+                    <div class="buttons">
+                        <button onclick="scrollToTarget_signUp()">Sign Up</button>
+                        <button id="btn_Info" onclick="scrollToTarget_about()">Learn More</button>
+                    </div>
+                    <div class="Login-alert-container" id="login_alert">
+                        <div class="alert-header">
+                            <span>Alert</span>
+                            <button id="close_btn_form" onclick="Close_Alert()">X</button>
+                        </div>
+                        <div class="alert-content">You Can't Actually Make An Account Or Login To this Website</div>
+                    </div>
+                    <div class="sign-up-form" id="sign_up_form">
+                        <button id="close_btn_form" onclick="close_sign_up_form()">X</button>
+                        <div class="form-buttons">
+                            <div id="btn_form"></div>
+                            <button class="Toggle-signing" onclick="login_show()">Login</button>
+                            <button class="Toggle-signing" onclick="register_show()">Register</button>
+                        </div>
+                        <form id="login" class="signing-inputs">
+                            <input type="text" maxlength="20" placeholder="Username">
+                            <input type="password" maxlength="30" placeholder="Password">
+                            <button class="signing-btn" onclick="Login_Alert(event)">Log In</button>
+                        </form>
+                        <form id="register" class="signing-inputs">
+                            <input type="text" maxlength="20" placeholder="Username">
+                            <input type="email" maxlength="40" placeholder="You@example.com">
+                            <input type="password" maxlength="30" placeholder="Password">
+                            <button class="signing-btn" onclick="Login_Alert(event)">Register</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="big-img-container">
+                        <img src="images/home-page/big.jpg" alt="Big" class="big-img">
+                    </div>
+                    <img src="images/home-page/small.jpg" alt="small" class="small-pic-top-left">
+                    <img src="images/home-page/small2.jpg" alt="small2" class="small-pic-bottom-right">
+                </div> 
+            </div>
+
+            <div class="line-circle" id="scrollhere_I">
+                <div class="line1"></div>
+                <div class="small-line1"></div>
+                <div class="small-line2"></div>
+                <div class="circle">I</div>
+                <div class="line2"></div>
+                <div class="small-line3"></div>
+                <div class="small-line4"></div>
+            </div>
+
+            <div class="Info-container" id="info1">
+                <div class="image-display">
+                    <img src="images/browsing-houses/1.jpg" alt="House 1">
+                </div>
+                <div class="details-container">
+                    <div class="details-left">
+                        <ul>
+                            <li>Close to the beach</li>
+                            <li>Calm Neighborhood</li>
+                            <li>1150 square feet</li>
+                            <li>3 bedrooms</li>
+                            <li>2 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="details-right">
+                        <ul>
+                            <li>1 Guest Room</li>
+                            <li>Small Garden</li>
+                            <li>Comes with a garage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="check-out">
+                    <div>
+                        <span class="check-out-price">300.000$</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="check-out-Order" onclick="Buy_from_LearnMore1()">Buy Now</button>
+                        <button class="check-out-close" onclick="close_learnmore1()">Exit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Info-container" id="info2">
+                <div class="image-display">
+                    <img src="images/browsing-houses/2.jpg" alt="House 2">
+                </div>
+                <div class="details-container">
+                    <div class="details-left">
+                        <ul>
+                            <li>Spacious Garage</li>
+                            <li>Calm Neighborhood</li>
+                            <li>1600 square feet</li>
+                            <li>4 bedrooms</li>
+                            <li>3 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="details-right">
+                        <ul>
+                            <li>1 Guest Room</li>
+                            <li>Small Garden</li>
+                            <li>Small basement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="check-out">
+                    <div>
+                        <span class="check-out-price">450.000$</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="check-out-Order" onclick="Buy_from_LearnMore2()">Buy Now</button>
+                        <button class="check-out-close" onclick="close_learnmore2()">Exit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Info-container" id="info3">
+                <div class="image-display">
+                    <img src="images/browsing-houses/3.jpg" alt="House 3">
+                </div>
+                <div class="details-container">
+                    <div class="details-left">
+                        <ul>
+                            <li>Luxury Villa</li>
+                            <li>Calm Neighborhood</li>
+                            <li>2600 square feet</li>
+                            <li>5 bedrooms</li>
+                            <li>4 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="details-right">
+                        <ul>
+                            <li>3 Guest Room</li>
+                            <li>Customizable</li>
+                            <li>Large basement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="check-out">
+                    <div>
+                        <span class="check-out-price">1.200.000$</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="check-out-Order" onclick="Buy_from_LearnMore3()">Buy Now</button>
+                        <button class="check-out-close" onclick="close_learnmore3()">Exit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Info-container" id="info4">
+                <div class="image-display">
+                    <img src="images/browsing-houses/4.jpg" alt="House 4">
+                </div>
+                <div class="details-container">
+                    <div class="details-left">
+                        <ul>
+                            <li>Luxury Villa/Mansion</li>
+                            <li>Calm Neighborhood</li>
+                            <li>3000 square feet</li>
+                            <li>6 bedrooms</li>
+                            <li>4.5 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="details-right">
+                        <ul>
+                            <li>4 Guest Room</li>
+                            <li>Large Garden</li>
+                            <li>Large basement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="check-out">
+                    <div>
+                        <span class="check-out-price">1.500.000$</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="check-out-Order" onclick="Buy_from_LearnMore4()">Buy Now</button>
+                        <button class="check-out-close" onclick="close_learnmore4()">Exit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buy-container" id="buy_container">
+                <div class="buy-header">
+                    <span>Alert</span>
+                    <button id="close_btn_form" onclick="Close_Buy()">X</button>
+                </div>
+                <div class="content">You Can't Actually Buy Items From this Website</div>
+            </div>
+
+            <a id="Browse-scrollhere"></a>
+
+            <div class="browsing-area">
+
+                <div class="browsing-container" id="item1" onmouseover="HoverEffect(this)" onmouseout="ResetEffect(this)">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/browsing-houses/1.jpg" alt="Appartment1">
+                        </div>
+                    </div>
+
+                    <div class="information-container">
+                        <div class="Price">300.000$</div>
+                        <ul class="information">
+                            <li class="detail">Close to the beach</li>
+                            <li class="detail">Calm Neighborhood</li>
+                            <li class="detail">1150 Square Feet</li>
+                        </ul>
+                        <div class="browse-buttons">
+                            <button class="Order" onclick="Buy()">Buy Now</button>
+                            <button class="Info" onclick="LearnMore1()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="browsing-container" id="item2" onmouseover="HoverEffect(this)" onmouseout="ResetEffect(this)">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/browsing-houses/2.jpg" alt="Appartment1">
+                        </div>
+                    </div>
+
+                    <div class="information-container">
+                        <div class="Price">450.000$</div>
+                        <ul class="information">
+                            <li class="detail">4 Bedrooms</li>
+                            <li class="detail">Calm Neighborhood</li>
+                            <li class="detail">1600 Square Feet</li>
+                        </ul>
+                        <div class="browse-buttons">
+                            <button class="Order" onclick="Buy()">Buy Now</button>
+                            <button class="Info" onclick="LearnMore2()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="browsing-container" id="item3" onmouseover="HoverEffect(this)" onmouseout="ResetEffect(this)">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/browsing-houses/3.jpg" alt="Appartment1">
+                        </div>
+                    </div>
+
+                    <div class="information-container">
+                        <div class="Price">1.200.000$</div>
+                        <ul class="information">
+                            <li class="detail">Luxury Villa</li>
+                            <li class="detail">Customizable</li>
+                            <li class="detail">2600 Square Feet</li>
+                        </ul>
+                        <div class="browse-buttons">
+                            <button class="Order" onclick="Buy()">Buy Now</button>
+                            <button class="Info" onclick="LearnMore3()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="browsing-container" id="item4" onmouseover="HoverEffect(this)" onmouseout="ResetEffect(this)">
+                    <div class="image-container">
+                        <div class="image">
+                            <img src="images/browsing-houses/4.jpg" alt="Appartment1">
+                        </div>
+                    </div>
+
+                    <div class="information-container">
+                        <div class="Price">1.500.000$</div>
+                        <ul class="information">
+                            <li class="detail">Comes with a Garden</li>
+                            <li class="detail">Luxury Villa</li>
+                            <li class="detail">3000 Square Feet</li>
+                        </ul>
+                        <div class="browse-buttons">
+                            <button class="Order" onclick="Buy()">Buy Now</button>
+                            <button class="Info" onclick="LearnMore4()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlay-container">
+                    
+                    <div class="overlay-title">
+                        <span>Listings</span>
+                        <button onclick="close_overlay()">X</button>
+                    </div>
+                    <div class="overlay-listings">There Aren't anymore listings at the moment</div>
+                </div>
+            </div>
+
+            <div class="backdrop" id="backdrop"></div>
+
+            <div class="show-more">
+                <button class="Browse-more" onclick="show_overlay()" id="ShowOverlayBtn">Show More <span><i class="fa-solid fa-circle-chevron-down"></i></span></button>
+            </div>
+
+            <a id="About-scrollhere"></a>
+
+            <div class="line-circle">
+                <div class="line1"></div>
+                <div class="small-line1"></div>
+                <div class="small-line2"></div>
+                <div class="circle">II</div>
+                <div class="line2"></div>
+                <div class="small-line3"></div>
+                <div class="small-line4"></div>
+            </div>
+
+            <div class="about">
+                <div class="text1">
+                    <div class="text1-title">Why us?</div>
+                    <div class="text1-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolore explicabo ullam delectus at. Hic optio commodi aspernatur, unde ad dolores vero? Cumque, corrupti! Perspiciatis nemo fuga voluptatibus magnam esse laborum adipisci rerum natus maiores aliquid odio sed accusamus asperiores vero officia magni culpa, excepturi sunt officiis quod eaque sequi.</div>
+                </div>
+
+                <div class="text1-image">
+                    <img width="200" src="images/icons/trust.png" alt="trust"/>
+                </div>
+
+                <div class="text2-image">
+                    <img width="200" src="images/icons/history.png" alt="History">
+                </div>
+
+                <div class="text2">
+                    <div class="text2-title">Our History</div>
+                    <div class="text2-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eligendi, corporis impedit ullam, nemo et fuga vel possimus assumenda quos provident in velit aliquid rerum? Laudantium dolorem iusto quae atque labore reiciendis hic, rerum maiores ipsum consequatur iste neque dicta omnis vitae illum exercitationem quod odio eveniet quibusdam at natus laborum! Eveniet perspiciatis totam tenetur inventore excepturi tempora ipsam tempore?</div>
+                </div>
+
+                <div class="text1">
+                    <div class="text1-title">Discounts</div>
+                    <div class="text1-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eligendi, corporis impedit ullam, nemo et fuga vel possimus assumenda quos provident in velit aliquid rerum? Laudantium dolorem iusto quae atque labore reiciendis hic, rerum maiores ipsum consequatur iste neque dicta omnis vitae illum exercitationem quod odio eveniet quibusdam at natus laborum! Eveniet perspiciatis totam tenetur inventore excepturi tempora ipsam tempore?</div>
+                </div>
+
+                <div class="text3-image">
+                    <img width="200" src="images/icons/discount.png" alt="Discount">
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="deals-done">
+                    <div class="deals-image">
+                        <img src="images/icons/deal.png" alt="Deals">
+                    </div>
+                    <div class="deals-stats">+3000</div>
+                    <div class="deals">Deals Closed</div>
+                </div>
+                <div class="houses-available">
+                    <div class="houses-image">
+                        <img src="images/icons/houses.png" alt="Houses">
+                    </div>
+                    <div class="houses-stats">+500</div>
+                    <div class="houses" id="scroll_here_contact">Houses available</div>
+                </div>
+                <div class="agents-available">
+                    <div class="agents-image">
+                        <img src="images/icons/agent.png" alt="Agent">
+                    </div>
+                    <div class="agents-stats">32</div>
+                    <div class="agents">Agents available</div>
+                </div>
+            </div>
+
+            <a id="Contact-scrollhere"></a>
+
+            <div class="line-circle">
+                <div class="line1"></div>
+                <div class="small-line1"></div>
+                <div class="small-line2"></div>
+                <div class="circle">III</div>
+                <div class="line2"></div>
+                <div class="small-line3"></div>
+                <div class="small-line4"></div>
+            </div>
+
+            <div class="Contact-alert" id="Contact_Alert">
+                <div class="contact-header">
+                    <span>Alert</span>
+                    <button id="close_btn_form" onclick="Close_Contact_Alert()">X</button>
+                </div>
+                <div class="contact-content">You Can't Actually Send us Your Email/Phone in this Website</div>
+            </div>
+            <div class="Contact-container">
+                <div class="contact-text">
+                    <div class="contact-title">
+                        Contact US
+                    </div>
+                    <div class="contact-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex aliquid eveniet corrupti sequi optio repellendus repellat nisi illo adipisci omnis accusantium earum, quidem veritatis! Illo provident vel dicta voluptatibus ab voluptas nesciunt autem tempora. Ducimus ullam illum libero, distinctio inventore, dignissimos consequuntur repellendus ipsa laudantium eaque autem doloribus consectetur error nobis cupiditate quo officia quasi laborum veniam est expedita reprehenderit?</div>
+                </div>
+                <div class="contact-fill">
+                    <div class="input-container">
+                        <input class="user-input" type="email" placeholder="you@example.com" maxlength="32" id="user-input" required>
+                        <button class="contact-submit" type="submit" onclick="Contact_Alert()"><img src="images/icons/submit.png" alt="#" class="verified-contact-submit"></button>
+                    </div>
+                    
+                    <div class="switch">
+                        <input type="checkbox" id="toggle-contact">
+                        <label for="toggle-contact"></label>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div class="footer-container">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo/logo-no-background.png" alt="Logo"></a>
+                    </div>
+                    <div class="footer-information">
+                        <div class="disclaimer">This Website is just for Design.</div>
+                        <div class="disclaimer-details">This website is intended solely for demonstration purposes to showcase design and functionality. It is not a platform for real estate transactions, buying, or selling properties. Any listings, images, or information displayed on this website are purely fictional (including logo and website name too) and do not represent actual properties or offerings. <br> WE DO NOT OWN ANY OF THEM!!!</div>
+                        <div class="socials">
+                            <a href="https://github.com/codemehdi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://ma.linkedin.com/in/el-mehdi-el-ouasbi-8790952a4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

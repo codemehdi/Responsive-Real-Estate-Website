@@ -1,0 +1,72 @@
+.stats{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.stats img{
+    transition: transform 0.5s ease;
+}
+
+.stats img:hover{
+    transform: scale(1.1);
+}
+
+.deals-done{
+    text-align: center;
+}
+
+.deals-done .deals-image img{
+    width: 190px;
+}
+
+.deals-done .deals-stats{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.deals-done .deals{
+    font-size: 18px;
+    padding-left: 2%;
+    opacity: 0.6;
+}
+
+.stats .houses-available{
+    text-align: center;
+}
+
+.houses-available .houses-image img{
+    width:250px;
+}
+
+.houses-available .houses-stats{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.houses-available .houses{
+    font-size: 18px;
+    padding-left: 2%;
+    opacity: 0.6;
+}
+
+.agents-available{
+    text-align: center;
+}
+
+.agents-available .agents-image img{
+    width:170px;
+}
+
+.agents-available .agents-stats{
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 2%;
+}
+
+.agents-available .agents{
+    font-size: 18px;
+    opacity: 0.6;
+    padding-left: 2%;
+}
